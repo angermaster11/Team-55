@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #0A0E1A;
+    font-family: 'DM Mono', monospace;
+  }
+
+  ::selection {
+    background-color: rgba(0, 255, 178, 0.25);
+    color: #E2E8F0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A0E1A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #141C35;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7B61FF;
+  }
+}
+
+@layer utilities {
+  .text-gradient-mint {
+    background: linear-gradient(90deg, #00FFB2, #7B61FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-coral {
+    background: linear-gradient(90deg, #00FFB2, #FF6B35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-brand {
+    background: linear-gradient(135deg, #00FFB2, #7B61FF);
+  }
+
+  .glow-mint {
+    box-shadow: 0 0 32px rgba(0, 255, 178, 0.3);
+  }
+
+  .glow-mint-lg {
+    box-shadow: 0 0 64px rgba(0, 255, 178, 0.5);
+  }
+
+  .glow-violet {
+    box-shadow: 0 0 32px rgba(123, 97, 255, 0.4);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(0, 255, 178, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 178, 0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .card-border {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .card-border-mint {
+    border: 1px solid rgba(0, 255, 178, 0.12);
+  }
+}

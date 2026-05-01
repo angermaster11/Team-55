@@ -1,0 +1,62 @@
+diff --git a/app.py b/app.py
+index 17be067..ab40ca3 100644
+--- a/app.py
++++ b/app.py
+@@ -1,7 +1,10 @@
+ import numpy as np
+ 
+-def add(a, b):
+-    return np.add(a, b)
++def add(a, b):
++    if isinstance(a, str) or isinstance(b, str):
++        return str(a) + str(b)
++    else:
++        return a + b
+ 
+-def divide(a, b):
+-    return np.divide(a, b)
++def divide(a, b):
++    return np.divide(a, b)
+diff --git a/test_app.py b/test_app.py
+index 285f195..f0a4630 100644
+--- a/test_app.py
++++ b/test_app.py
+@@ -1,20 +1,18 @@
+-from app import add, divide
+-
+-def test_add():
+-    assert add(2,3) == 6
+-
+-def test_divide():
+-    assert divide(10,2) == 5
+-
+-def test_divide_by_zero():
+-    divide(5,0)
+-
+-def test_add_string():
+-    assert add("a ", "b") == "ab"
+-
+-def test_divide_by_zero():
+-    divide(5,1)
+-
+-
+-def test_divide_by_zero():
+-    divide(5,0)
++from app import add, divide
++
++
++def test_add():
++    assert add(2, 3) == 5
++
++
++def test_divide():
++    assert divide(10, 2) == 5
++
++
++def test_divide_by_zero():
++    divide(5, 0)
++
++
++def test_add_string():
++    assert add("a ", "b") == "a b"
++

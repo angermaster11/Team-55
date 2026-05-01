@@ -1,0 +1,2 @@
+git apply --check failed:
+error: No valid patches in input (allow with "--allow-empty")

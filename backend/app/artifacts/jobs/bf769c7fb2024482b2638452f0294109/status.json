@@ -1,0 +1,64 @@
+{
+  "job_id": "bf769c7fb2024482b2638452f0294109",
+  "state": "failed",
+  "created_at": "2026-04-28T19:00:41.077049+00:00",
+  "updated_at": "2026-04-28T19:02:20.843087+00:00",
+  "payload": {
+    "owner": "angermaster11",
+    "repo": "healpipe-test-repo",
+    "run_id": 25072021555,
+    "head_sha": "7fc83c1542b84a8cef91dc8986c33273e5254b77",
+    "clone_url": "https://github.com/angermaster11/healpipe-test-repo.git"
+  },
+  "steps": [
+    {
+      "at": "2026-04-28T19:00:41.086520+00:00",
+      "name": "start"
+    },
+    {
+      "at": "2026-04-28T19:00:41.086903+00:00",
+      "name": "download_logs"
+    },
+    {
+      "at": "2026-04-28T19:00:45.112723+00:00",
+      "name": "extract_errors"
+    },
+    {
+      "at": "2026-04-28T19:00:45.119719+00:00",
+      "name": "clone_repo"
+    },
+    {
+      "at": "2026-04-28T19:00:48.395433+00:00",
+      "name": "autofix"
+    },
+    {
+      "at": "2026-04-28T19:00:48.397874+00:00",
+      "name": "test_before_fix"
+    },
+    {
+      "at": "2026-04-28T19:02:11.092970+00:00",
+      "name": "llm_generate_patch"
+    },
+    {
+      "at": "2026-04-28T19:02:20.837125+00:00",
+      "name": "apply_patch"
+    }
+  ],
+  "error": "git apply failed: git apply --check failed:\nerror: patch failed: app.py:1\nerror: app.py: patch does not apply",
+  "artifacts": {
+    "job_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109",
+    "repo_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/repo",
+    "logs_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/logs",
+    "test_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/tests",
+    "combined_logs_path": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/logs/raw_logs.txt",
+    "errors_path": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/logs/errors.json",
+    "autofix_notes": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/patch/autofix.txt",
+    "test_before": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/tests/before.json",
+    "failure_summary": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/logs/failure_summary.txt",
+    "patch_attempt1_normalized": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/patch/attempt1.normalized.diff",
+    "patch_attempt1": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/patch/attempt1.diff",
+    "patch_raw_attempt1": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/patch/attempt1.raw.txt",
+    "patch_notes": "ok",
+    "patch_apply_output": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/bf769c7fb2024482b2638452f0294109/patch/apply.txt"
+  }
+}

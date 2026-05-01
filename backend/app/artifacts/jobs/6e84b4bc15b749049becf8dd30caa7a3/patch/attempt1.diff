@@ -1,0 +1,7 @@
+diff --git a/requirements.txt b/requirements.txt
+index e69de29..4f3b7dd 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1 +1 @@
+-numpy==1.19.0
++numpy>=1.19.0

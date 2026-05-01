@@ -1,0 +1,5 @@
+applied via 'patch' utility (git apply --check failed first)
+patching file app.py
+Hunk #1 succeeded at 1 with fuzz 2.
+patching file test_app.py
+Hunk #1 succeeded at 1 with fuzz 2.

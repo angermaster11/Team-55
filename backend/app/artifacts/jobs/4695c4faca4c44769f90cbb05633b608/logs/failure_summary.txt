@@ -1,0 +1,174 @@
+GitHub Actions extracted errors:
+[
+  {
+    "error_type": "Traceback",
+    "file": "/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/mingw32ccompiler.py",
+    "line": "28",
+    "test": null,
+    "context": [
+      "2026-04-28T18:37:34.9402377Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:37:34.9402902Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:37:34.9403427Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib",
+      "2026-04-28T18:37:34.9404245Z ##[endgroup]",
+      "2026-04-28T18:37:36.2099769Z Collecting numpy==1.19.0 (from -r requirements.txt (line 1))",
+      "2026-04-28T18:37:36.3119221Z   Downloading numpy-1.19.0.zip (7.3 MB)",
+      "2026-04-28T18:37:36.5337048Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 44.3 MB/s  0:00:00",
+      "2026-04-28T18:37:36.8035536Z   Installing build dependencies: started",
+      "2026-04-28T18:37:38.5131318Z   Installing build dependencies: finished with status 'done'",
+      "2026-04-28T18:37:38.5145810Z   Getting requirements to build wheel: started",
+      "2026-04-28T18:37:38.9674745Z   Getting requirements to build wheel: finished with status 'done'",
+      "2026-04-28T18:37:38.9684518Z   Preparing metadata (pyproject.toml): started",
+      "2026-04-28T18:37:39.1780572Z   Preparing metadata (pyproject.toml): finished with status 'error'",
+      "2026-04-28T18:37:39.1833796Z   error: subprocess-exited-with-error",
+      "2026-04-28T18:37:39.1835154Z   ",
+      "2026-04-28T18:37:39.1835919Z   × Preparing metadata (pyproject.toml) did not run successfully.",
+      "2026-04-28T18:37:39.1836562Z   │ exit code: 1",
+      "2026-04-28T18:37:39.1837141Z   ╰─> [24 lines of output]",
+      "2026-04-28T18:37:39.1837631Z       Running from numpy source directory.",
+      "2026-04-28T18:37:39.1838740Z       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates",
+      "2026-04-28T18:37:39.1839862Z       Traceback (most recent call last):",
+      "2026-04-28T18:37:39.1848295Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>",
+      "2026-04-28T18:37:39.1849123Z           main()",
+      "2026-04-28T18:37:39.1849796Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 373, in main",
+      "2026-04-28T18:37:39.1850522Z           json_out[\"return_val\"] = hook(**hook_input[\"kwargs\"])",
+      "2026-04-28T18:37:39.1851381Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 175, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:37:39.1852574Z           return hook(metadata_directory, config_settings)",
+      "2026-04-28T18:37:39.1853327Z         File \"/tmp/pip-build-env-qkz7v2po/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 380, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:37:39.1854413Z           self.run_setup()",
+      "2026-04-28T18:37:39.1855415Z         File \"/tmp/pip-build-env-qkz7v2po/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 520, in run_setup",
+      "2026-04-28T18:37:39.1856174Z           super().run_setup(setup_script=setup_script)",
+      "2026-04-28T18:37:39.1856803Z         File \"/tmp/pip-build-env-qkz7v2po/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 317, in run_setup",
+      "2026-04-28T18:37:39.1857376Z           exec(code, locals())",
+      "2026-04-28T18:37:39.1857751Z         File \"<string>\", line 489, in <module>",
+      "2026-04-28T18:37:39.1858130Z         File \"<string>\", line 465, in setup_package",
+      "2026-04-28T18:37:39.1858741Z         File \"/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/core.py\", line 24, in <module>",
+      "2026-04-28T18:37:39.1859664Z           from numpy.distutils.command import config, config_compiler, \\",
+      "2026-04-28T18:37:39.1860382Z         File \"/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/command/config.py\", line 19, in <module>",
+      "2026-04-28T18:37:39.1861051Z           from numpy.distutils.mingw32ccompiler import generate_manifest",
+      "2026-04-28T18:37:39.1861751Z         File \"/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/mingw32ccompiler.py\", line 28, in <module>"
+    ]
+  },
+  {
+    "error_type": "Traceback",
+    "file": "/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/mingw32ccompiler.py",
+    "line": "28",
+    "test": null,
+    "context": [
+      "2026-04-28T18:37:34.9402374Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:37:34.9402900Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:37:34.9403423Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib",
+      "2026-04-28T18:37:34.9404237Z ##[endgroup]",
+      "2026-04-28T18:37:36.2099696Z Collecting numpy==1.19.0 (from -r requirements.txt (line 1))",
+      "2026-04-28T18:37:36.3119033Z   Downloading numpy-1.19.0.zip (7.3 MB)",
+      "2026-04-28T18:37:36.5336974Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 44.3 MB/s  0:00:00",
+      "2026-04-28T18:37:36.8035458Z   Installing build dependencies: started",
+      "2026-04-28T18:37:38.5131247Z   Installing build dependencies: finished with status 'done'",
+      "2026-04-28T18:37:38.5145765Z   Getting requirements to build wheel: started",
+      "2026-04-28T18:37:38.9674682Z   Getting requirements to build wheel: finished with status 'done'",
+      "2026-04-28T18:37:38.9684493Z   Preparing metadata (pyproject.toml): started",
+      "2026-04-28T18:37:39.1780499Z   Preparing metadata (pyproject.toml): finished with status 'error'",
+      "2026-04-28T18:37:39.1833773Z   error: subprocess-exited-with-error",
+      "2026-04-28T18:37:39.1835135Z   ",
+      "2026-04-28T18:37:39.1835907Z   × Preparing metadata (pyproject.toml) did not run successfully.",
+      "2026-04-28T18:37:39.1836542Z   │ exit code: 1",
+      "2026-04-28T18:37:39.1837131Z   ╰─> [24 lines of output]",
+      "2026-04-28T18:37:39.1837616Z       Running from numpy source directory.",
+      "2026-04-28T18:37:39.1838689Z       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates",
+      "2026-04-28T18:37:39.1839848Z       Traceback (most recent call last):",
+      "2026-04-28T18:37:39.1848274Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>",
+      "2026-04-28T18:37:39.1849118Z           main()",
+      "2026-04-28T18:37:39.1849791Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 373, in main",
+      "2026-04-28T18:37:39.1850518Z           json_out[\"return_val\"] = hook(**hook_input[\"kwargs\"])",
+      "2026-04-28T18:37:39.1851377Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 175, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:37:39.1852549Z           return hook(metadata_directory, config_settings)",
+      "2026-04-28T18:37:39.1853322Z         File \"/tmp/pip-build-env-qkz7v2po/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 380, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:37:39.1854402Z           self.run_setup()",
+      "2026-04-28T18:37:39.1855406Z         File \"/tmp/pip-build-env-qkz7v2po/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 520, in run_setup",
+      "2026-04-28T18:37:39.1856169Z           super().run_setup(setup_script=setup_script)",
+      "2026-04-28T18:37:39.1856799Z         File \"/tmp/pip-build-env-qkz7v2po/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 317, in run_setup",
+      "2026-04-28T18:37:39.1857372Z           exec(code, locals())",
+      "2026-04-28T18:37:39.1857748Z         File \"<string>\", line 489, in <module>",
+      "2026-04-28T18:37:39.1858126Z         File \"<string>\", line 465, in setup_package",
+      "2026-04-28T18:37:39.1858737Z         File \"/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/core.py\", line 24, in <module>",
+      "2026-04-28T18:37:39.1859410Z           from numpy.distutils.command import config, config_compiler, \\",
+      "2026-04-28T18:37:39.1860377Z         File \"/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/command/config.py\", line 19, in <module>",
+      "2026-04-28T18:37:39.1861047Z           from numpy.distutils.mingw32ccompiler import generate_manifest",
+      "2026-04-28T18:37:39.1861747Z         File \"/tmp/pip-install-hh2ukuw9/numpy_2f423ea0d4014d30a82673419f1036ae/numpy/distutils/mingw32ccompiler.py\", line 28, in <module>"
+    ]
+  }
+]
+
+Sandbox test output (stdout tail):
+Requirement already satisfied: pip in /tmp/venv/lib/python3.11/site-packages (24.0)
+Collecting pip
+  Downloading pip-26.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: setuptools in /tmp/venv/lib/python3.11/site-packages (79.0.1)
+Collecting setuptools
+  Downloading setuptools-82.0.1-py3-none-any.whl.metadata (6.5 kB)
+Collecting wheel
+  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging>=24.0 (from wheel)
+  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Downloading pip-26.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 617.0 kB/s eta 0:00:00
+Downloading setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 863.0 kB/s eta 0:00:00
+Downloading wheel-0.47.0-py3-none-any.whl (32 kB)
+Downloading packaging-26.2-py3-none-any.whl (100 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 559.7 kB/s eta 0:00:00
+Installing collected packages: setuptools, pip, packaging, wheel
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 79.0.1
+    Uninstalling setuptools-79.0.1:
+      Successfully uninstalled setuptools-79.0.1
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed packaging-26.2 pip-26.1 setuptools-82.0.1 wheel-0.47.0
+Collecting numpy==1.26.4 (from -r requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting pandas==2.0.0 (from -r requirements.txt (line 2))
+  Downloading pandas-2.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading pytz-2026.1.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.1 (from pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading tzdata-2026.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 1.3 MB/s  0:00:14
+Downloading pandas-2.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 2.5 MB/s  0:00:04
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2026.1.post1-py2.py3-none-any.whl (510 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+Installing collected packages: pytz, tzdata, six, numpy, python-dateutil, pandas
+
+Successfully installed numpy-1.26.4 pandas-2.0.0 python-dateutil-2.9.0.post0 pytz-2026.1.post1 six-1.17.0 tzdata-2026.2
+
+
+Sandbox test output (stderr tail):
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pytest/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pytest/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pytest/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pytest/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pytest/
+ERROR: Could not find a version that satisfies the requirement pytest (from versions: none)
+ERROR: No matching distribution found for pytest
+
+
+Relevant repo files:
+--- app.py ---
+import numpy as np
+
+def add(a, b):
+    return np.add(a, b)
+
+def divide(a, b):
+    return np.divide(a, b)
+
+

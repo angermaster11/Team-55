@@ -1,0 +1,445 @@
+
+
+===== 0_test.txt =====
+
+﻿2026-04-28T18:14:42.5183478Z Current runner version: '2.334.0'
+2026-04-28T18:14:42.5211966Z ##[group]Runner Image Provisioner
+2026-04-28T18:14:42.5212905Z Hosted Compute Agent
+2026-04-28T18:14:42.5213416Z Version: 20260422.526
+2026-04-28T18:14:42.5214271Z Commit: e1a9e573f4d0838b3a7c1b07401aeb29ed3635a9
+2026-04-28T18:14:42.5215314Z Build Date: 2026-04-22T09:31:31Z
+2026-04-28T18:14:42.5216225Z Worker ID: {31e6d89c-a35c-439d-9aa9-97c9508cce80}
+2026-04-28T18:14:42.5217016Z Azure Region: centralus
+2026-04-28T18:14:42.5217509Z ##[endgroup]
+2026-04-28T18:14:42.5218972Z ##[group]Operating System
+2026-04-28T18:14:42.5219587Z Ubuntu
+2026-04-28T18:14:42.5219990Z 24.04.4
+2026-04-28T18:14:42.5220663Z LTS
+2026-04-28T18:14:42.5221025Z ##[endgroup]
+2026-04-28T18:14:42.5221503Z ##[group]Runner Image
+2026-04-28T18:14:42.5221969Z Image: ubuntu-24.04
+2026-04-28T18:14:42.5222438Z Version: 20260426.100.1
+2026-04-28T18:14:42.5223530Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260426.100/images/ubuntu/Ubuntu2404-Readme.md
+2026-04-28T18:14:42.5224853Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260426.100
+2026-04-28T18:14:42.5225627Z ##[endgroup]
+2026-04-28T18:14:42.5226647Z ##[group]GITHUB_TOKEN Permissions
+2026-04-28T18:14:42.5228801Z Contents: read
+2026-04-28T18:14:42.5229276Z Metadata: read
+2026-04-28T18:14:42.5229740Z Packages: read
+2026-04-28T18:14:42.5230459Z ##[endgroup]
+2026-04-28T18:14:42.5232518Z Secret source: Actions
+2026-04-28T18:14:42.5233372Z Prepare workflow directory
+2026-04-28T18:14:42.5556208Z Prepare all required actions
+2026-04-28T18:14:42.5597815Z Getting action download info
+2026-04-28T18:14:42.9811412Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2026-04-28T18:14:43.0827613Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+2026-04-28T18:14:43.2440301Z Complete job name: test
+2026-04-28T18:14:43.3116786Z ##[group]Run actions/checkout@v3
+2026-04-28T18:14:43.3117785Z with:
+2026-04-28T18:14:43.3118369Z   repository: angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.3119319Z   token: ***
+2026-04-28T18:14:43.3119796Z   ssh-strict: true
+2026-04-28T18:14:43.3120481Z   persist-credentials: true
+2026-04-28T18:14:43.3121040Z   clean: true
+2026-04-28T18:14:43.3121536Z   sparse-checkout-cone-mode: true
+2026-04-28T18:14:43.3122136Z   fetch-depth: 1
+2026-04-28T18:14:43.3122613Z   fetch-tags: false
+2026-04-28T18:14:43.3123132Z   lfs: false
+2026-04-28T18:14:43.3123591Z   submodules: false
+2026-04-28T18:14:43.3124109Z   set-safe-directory: true
+2026-04-28T18:14:43.3124883Z ##[endgroup]
+2026-04-28T18:14:43.3998367Z Syncing repository: angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.4000982Z ##[group]Getting Git version info
+2026-04-28T18:14:43.4001955Z Working directory is '/home/runner/work/healpipe-test-repo/healpipe-test-repo'
+2026-04-28T18:14:43.4003208Z [command]/usr/bin/git version
+2026-04-28T18:14:43.4074898Z git version 2.54.0
+2026-04-28T18:14:43.4100075Z ##[endgroup]
+2026-04-28T18:14:43.4116542Z Temporarily overriding HOME='/home/runner/work/_temp/a027c31a-9816-4267-b609-5a2e8c96f2e1' before making global git config changes
+2026-04-28T18:14:43.4119476Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-28T18:14:43.4122163Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/healpipe-test-repo/healpipe-test-repo
+2026-04-28T18:14:43.4171326Z Deleting the contents of '/home/runner/work/healpipe-test-repo/healpipe-test-repo'
+2026-04-28T18:14:43.4174659Z ##[group]Initializing the repository
+2026-04-28T18:14:43.4179071Z [command]/usr/bin/git init /home/runner/work/healpipe-test-repo/healpipe-test-repo
+2026-04-28T18:14:43.4288183Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-28T18:14:43.4290037Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-28T18:14:43.4292186Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-28T18:14:43.4293352Z hint: call:
+2026-04-28T18:14:43.4293820Z hint:
+2026-04-28T18:14:43.4294487Z hint: 	git config --global init.defaultBranch <name>
+2026-04-28T18:14:43.4295457Z hint:
+2026-04-28T18:14:43.4296548Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-28T18:14:43.4297649Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-28T18:14:43.4298485Z hint:
+2026-04-28T18:14:43.4298964Z hint: 	git branch -m <name>
+2026-04-28T18:14:43.4299869Z hint:
+2026-04-28T18:14:43.4300744Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-28T18:14:43.4301900Z Initialized empty Git repository in /home/runner/work/healpipe-test-repo/healpipe-test-repo/.git/
+2026-04-28T18:14:43.4304509Z [command]/usr/bin/git remote add origin https://github.com/angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.4344734Z ##[endgroup]
+2026-04-28T18:14:43.4347611Z ##[group]Disabling automatic garbage collection
+2026-04-28T18:14:43.4348416Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-28T18:14:43.4371556Z ##[endgroup]
+2026-04-28T18:14:43.4372488Z ##[group]Setting up auth
+2026-04-28T18:14:43.4377406Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-28T18:14:43.4404980Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-28T18:14:43.4739420Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-28T18:14:43.4762060Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-28T18:14:43.4944972Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-28T18:14:43.4976829Z ##[endgroup]
+2026-04-28T18:14:43.4978520Z ##[group]Fetching the repository
+2026-04-28T18:14:43.4986022Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +2957f3f644ae3038a7f39bbaa34e8713b7e29a47:refs/remotes/origin/main
+2026-04-28T18:14:43.8357097Z remote: Enumerating objects: 9, done.        
+2026-04-28T18:14:43.8358159Z remote: Counting objects:  11% (1/9)        
+2026-04-28T18:14:43.8359255Z remote: Counting objects:  22% (2/9)        
+2026-04-28T18:14:43.8360521Z remote: Counting objects:  33% (3/9)        
+2026-04-28T18:14:43.8361761Z remote: Counting objects:  44% (4/9)        
+2026-04-28T18:14:43.8362462Z remote: Counting objects:  55% (5/9)        
+2026-04-28T18:14:43.8363137Z remote: Counting objects:  66% (6/9)        
+2026-04-28T18:14:43.8363857Z remote: Counting objects:  77% (7/9)        
+2026-04-28T18:14:43.8364579Z remote: Counting objects:  88% (8/9)        
+2026-04-28T18:14:43.8365248Z remote: Counting objects: 100% (9/9)        
+2026-04-28T18:14:43.8365960Z remote: Counting objects: 100% (9/9), done.        
+2026-04-28T18:14:43.8366724Z remote: Compressing objects:  16% (1/6)        
+2026-04-28T18:14:43.8367393Z remote: Compressing objects:  33% (2/6)        
+2026-04-28T18:14:43.8368112Z remote: Compressing objects:  50% (3/6)        
+2026-04-28T18:14:43.8368831Z remote: Compressing objects:  66% (4/6)        
+2026-04-28T18:14:43.8369540Z remote: Compressing objects:  83% (5/6)        
+2026-04-28T18:14:43.8370429Z remote: Compressing objects: 100% (6/6)        
+2026-04-28T18:14:43.8371467Z remote: Compressing objects: 100% (6/6), done.        
+2026-04-28T18:14:43.8372564Z remote: Total 9 (delta 0), reused 7 (delta 0), pack-reused 0 (from 0)        
+2026-04-28T18:14:43.8478939Z From https://github.com/angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.8480274Z  * [new ref]         2957f3f644ae3038a7f39bbaa34e8713b7e29a47 -> origin/main
+2026-04-28T18:14:43.8630811Z ##[endgroup]
+2026-04-28T18:14:43.8632881Z ##[group]Determining the checkout info
+2026-04-28T18:14:43.8634923Z ##[endgroup]
+2026-04-28T18:14:43.8636191Z ##[group]Checking out the ref
+2026-04-28T18:14:43.8637732Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-28T18:14:43.8639190Z Switched to a new branch 'main'
+2026-04-28T18:14:43.8639986Z branch 'main' set up to track 'origin/main'.
+2026-04-28T18:14:43.8642828Z ##[endgroup]
+2026-04-28T18:14:43.8644628Z [command]/usr/bin/git log -1 --format='%H'
+2026-04-28T18:14:43.8645730Z '2957f3f644ae3038a7f39bbaa34e8713b7e29a47'
+2026-04-28T18:14:43.8858758Z ##[group]Run actions/setup-python@v4
+2026-04-28T18:14:43.8859361Z with:
+2026-04-28T18:14:43.8859747Z   python-version: 3.10
+2026-04-28T18:14:43.8860411Z   check-latest: false
+2026-04-28T18:14:43.8861104Z   token: ***
+2026-04-28T18:14:43.8861520Z   update-environment: true
+2026-04-28T18:14:43.8861990Z   allow-prereleases: false
+2026-04-28T18:14:43.8862443Z ##[endgroup]
+2026-04-28T18:14:44.0542089Z ##[group]Installed versions
+2026-04-28T18:14:44.0648476Z Successfully set up CPython (3.10.20)
+2026-04-28T18:14:44.0651236Z ##[endgroup]
+2026-04-28T18:14:44.0777817Z ##[group]Run pip install -r requirements.txt
+2026-04-28T18:14:44.0778462Z [36;1mpip install -r requirements.txt[0m
+2026-04-28T18:14:44.0778933Z [36;1mpip install pytest[0m
+2026-04-28T18:14:44.0876642Z shell: /usr/bin/bash -e {0}
+2026-04-28T18:14:44.0877179Z env:
+2026-04-28T18:14:44.0877618Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0878328Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+2026-04-28T18:14:44.0878991Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0879615Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0880536Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0881180Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+2026-04-28T18:14:44.0881711Z ##[endgroup]
+2026-04-28T18:14:45.3116975Z Collecting numpy==1.19.0 (from -r requirements.txt (line 1))
+2026-04-28T18:14:45.3979368Z   Downloading numpy-1.19.0.zip (7.3 MB)
+2026-04-28T18:14:45.8558938Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 17.3 MB/s  0:00:00
+2026-04-28T18:14:46.0650720Z   Installing build dependencies: started
+2026-04-28T18:14:47.7995958Z   Installing build dependencies: finished with status 'done'
+2026-04-28T18:14:47.8007797Z   Getting requirements to build wheel: started
+2026-04-28T18:14:48.2120055Z   Getting requirements to build wheel: finished with status 'done'
+2026-04-28T18:14:48.2131671Z   Preparing metadata (pyproject.toml): started
+2026-04-28T18:14:48.4052159Z   Preparing metadata (pyproject.toml): finished with status 'error'
+2026-04-28T18:14:48.4116781Z   error: subprocess-exited-with-error
+2026-04-28T18:14:48.4117381Z   
+2026-04-28T18:14:48.4118285Z   × Preparing metadata (pyproject.toml) did not run successfully.
+2026-04-28T18:14:48.4118965Z   │ exit code: 1
+2026-04-28T18:14:48.4119365Z   ╰─> [24 lines of output]
+2026-04-28T18:14:48.4119950Z       Running from numpy source directory.
+2026-04-28T18:14:48.4121199Z       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
+2026-04-28T18:14:48.4122631Z       Traceback (most recent call last):
+2026-04-28T18:14:48.4132732Z         File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+2026-04-28T18:14:48.4134040Z           main()
+2026-04-28T18:14:48.4135260Z         File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+2026-04-28T18:14:48.4136533Z           json_out["return_val"] = hook(**hook_input["kwargs"])
+2026-04-28T18:14:48.4138068Z         File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+2026-04-28T18:14:48.4139931Z           return hook(metadata_directory, config_settings)
+2026-04-28T18:14:48.4141289Z         File "/tmp/pip-build-env-4smswdb7/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 380, in prepare_metadata_for_build_wheel
+2026-04-28T18:14:48.4142298Z           self.run_setup()
+2026-04-28T18:14:48.4143231Z         File "/tmp/pip-build-env-4smswdb7/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 520, in run_setup
+2026-04-28T18:14:48.4144089Z           super().run_setup(setup_script=setup_script)
+2026-04-28T18:14:48.4144982Z         File "/tmp/pip-build-env-4smswdb7/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 317, in run_setup
+2026-04-28T18:14:48.4145886Z           exec(code, locals())
+2026-04-28T18:14:48.4146366Z         File "<string>", line 489, in <module>
+2026-04-28T18:14:48.4146946Z         File "<string>", line 465, in setup_package
+2026-04-28T18:14:48.4147989Z         File "/tmp/pip-install-9g78lysz/numpy_edbb237d69ae40c0a899ed71853473da/numpy/distutils/core.py", line 24, in <module>
+2026-04-28T18:14:48.4149473Z           from numpy.distutils.command import config, config_compiler, \
+2026-04-28T18:14:48.4150970Z         File "/tmp/pip-install-9g78lysz/numpy_edbb237d69ae40c0a899ed71853473da/numpy/distutils/command/config.py", line 19, in <module>
+2026-04-28T18:14:48.4152194Z           from numpy.distutils.mingw32ccompiler import generate_manifest
+2026-04-28T18:14:48.4153469Z         File "/tmp/pip-install-9g78lysz/numpy_edbb237d69ae40c0a899ed71853473da/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+2026-04-28T18:14:48.4154798Z           from distutils.msvccompiler import get_build_version as get_build_msvc_version
+2026-04-28T18:14:48.4155739Z       ModuleNotFoundError: No module named 'distutils.msvccompiler'
+2026-04-28T18:14:48.4156353Z       [end of output]
+2026-04-28T18:14:48.4156696Z   
+2026-04-28T18:14:48.4157299Z   note: This error originates from a subprocess, and is likely not a problem with pip.
+2026-04-28T18:14:48.4158188Z error: metadata-generation-failed
+2026-04-28T18:14:48.4158518Z 
+2026-04-28T18:14:48.4159073Z × Encountered error while generating package metadata.
+2026-04-28T18:14:48.4159683Z ╰─> numpy
+2026-04-28T18:14:48.4159879Z 
+2026-04-28T18:14:48.4160423Z note: This is an issue with the package mentioned above, not pip.
+2026-04-28T18:14:48.4161049Z hint: See above for details.
+2026-04-28T18:14:48.4997800Z ##[error]Process completed with exit code 1.
+2026-04-28T18:14:48.5105094Z Post job cleanup.
+2026-04-28T18:14:48.5836817Z [command]/usr/bin/git version
+2026-04-28T18:14:48.5870673Z git version 2.54.0
+2026-04-28T18:14:48.5909602Z Temporarily overriding HOME='/home/runner/work/_temp/1eb50750-56b9-436c-a7dc-d8615fbac39c' before making global git config changes
+2026-04-28T18:14:48.5910595Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-28T18:14:48.5913806Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/healpipe-test-repo/healpipe-test-repo
+2026-04-28T18:14:48.5942482Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-28T18:14:48.5968222Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-28T18:14:48.6149928Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-28T18:14:48.6173470Z http.https://github.com/.extraheader
+2026-04-28T18:14:48.6184269Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-28T18:14:48.6209237Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-28T18:14:48.6483568Z Cleaning up orphan processes
+2026-04-28T18:14:48.6709069Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v3, actions/setup-python@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
+
+===== test/system.txt =====
+
+2026-04-28T18:14:39.7810000Z Requested labels: ubuntu-latest
+2026-04-28T18:14:39.7810000Z Job defined at: angermaster11/healpipe-test-repo/.github/workflows/ci.yml@refs/heads/main
+2026-04-28T18:14:39.7810000Z Waiting for a runner to pick up this job...
+2026-04-28T18:14:39.7780000Z Evaluating test.if
+2026-04-28T18:14:39.7780000Z Evaluating: success()
+2026-04-28T18:14:39.7780000Z Result: true
+2026-04-28T18:14:39.9780000Z Job is waiting for a hosted runner to come online.
+2026-04-28T18:14:39.9790000Z Job is about to start running on the hosted runner: GitHub Actions 1000000015
+
+===== test/1_Set up job.txt =====
+
+﻿2026-04-28T18:14:42.5182767Z Current runner version: '2.334.0'
+2026-04-28T18:14:42.5211923Z ##[group]Runner Image Provisioner
+2026-04-28T18:14:42.5212899Z Hosted Compute Agent
+2026-04-28T18:14:42.5213413Z Version: 20260422.526
+2026-04-28T18:14:42.5214261Z Commit: e1a9e573f4d0838b3a7c1b07401aeb29ed3635a9
+2026-04-28T18:14:42.5215308Z Build Date: 2026-04-22T09:31:31Z
+2026-04-28T18:14:42.5216219Z Worker ID: {31e6d89c-a35c-439d-9aa9-97c9508cce80}
+2026-04-28T18:14:42.5217012Z Azure Region: centralus
+2026-04-28T18:14:42.5217504Z ##[endgroup]
+2026-04-28T18:14:42.5218963Z ##[group]Operating System
+2026-04-28T18:14:42.5219582Z Ubuntu
+2026-04-28T18:14:42.5219987Z 24.04.4
+2026-04-28T18:14:42.5220657Z LTS
+2026-04-28T18:14:42.5221021Z ##[endgroup]
+2026-04-28T18:14:42.5221500Z ##[group]Runner Image
+2026-04-28T18:14:42.5221965Z Image: ubuntu-24.04
+2026-04-28T18:14:42.5222434Z Version: 20260426.100.1
+2026-04-28T18:14:42.5223331Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260426.100/images/ubuntu/Ubuntu2404-Readme.md
+2026-04-28T18:14:42.5224848Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260426.100
+2026-04-28T18:14:42.5225623Z ##[endgroup]
+2026-04-28T18:14:42.5226643Z ##[group]GITHUB_TOKEN Permissions
+2026-04-28T18:14:42.5228781Z Contents: read
+2026-04-28T18:14:42.5229272Z Metadata: read
+2026-04-28T18:14:42.5229737Z Packages: read
+2026-04-28T18:14:42.5230454Z ##[endgroup]
+2026-04-28T18:14:42.5232505Z Secret source: Actions
+2026-04-28T18:14:42.5233368Z Prepare workflow directory
+2026-04-28T18:14:42.5556172Z Prepare all required actions
+2026-04-28T18:14:42.5597741Z Getting action download info
+2026-04-28T18:14:42.9811366Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2026-04-28T18:14:43.0827580Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+2026-04-28T18:14:43.2440145Z Complete job name: test
+
+
+===== test/2_Checkout code.txt =====
+
+﻿2026-04-28T18:14:43.3116742Z ##[group]Run actions/checkout@v3
+2026-04-28T18:14:43.3117776Z with:
+2026-04-28T18:14:43.3118363Z   repository: angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.3119314Z   token: ***
+2026-04-28T18:14:43.3119792Z   ssh-strict: true
+2026-04-28T18:14:43.3120476Z   persist-credentials: true
+2026-04-28T18:14:43.3121035Z   clean: true
+2026-04-28T18:14:43.3121531Z   sparse-checkout-cone-mode: true
+2026-04-28T18:14:43.3122132Z   fetch-depth: 1
+2026-04-28T18:14:43.3122609Z   fetch-tags: false
+2026-04-28T18:14:43.3123127Z   lfs: false
+2026-04-28T18:14:43.3123582Z   submodules: false
+2026-04-28T18:14:43.3124105Z   set-safe-directory: true
+2026-04-28T18:14:43.3124877Z ##[endgroup]
+2026-04-28T18:14:43.3998282Z Syncing repository: angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.4000951Z ##[group]Getting Git version info
+2026-04-28T18:14:43.4001949Z Working directory is '/home/runner/work/healpipe-test-repo/healpipe-test-repo'
+2026-04-28T18:14:43.4003201Z [command]/usr/bin/git version
+2026-04-28T18:14:43.4074579Z git version 2.54.0
+2026-04-28T18:14:43.4099986Z ##[endgroup]
+2026-04-28T18:14:43.4116474Z Temporarily overriding HOME='/home/runner/work/_temp/a027c31a-9816-4267-b609-5a2e8c96f2e1' before making global git config changes
+2026-04-28T18:14:43.4119455Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-28T18:14:43.4122141Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/healpipe-test-repo/healpipe-test-repo
+2026-04-28T18:14:43.4171251Z Deleting the contents of '/home/runner/work/healpipe-test-repo/healpipe-test-repo'
+2026-04-28T18:14:43.4174616Z ##[group]Initializing the repository
+2026-04-28T18:14:43.4179026Z [command]/usr/bin/git init /home/runner/work/healpipe-test-repo/healpipe-test-repo
+2026-04-28T18:14:43.4288091Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-28T18:14:43.4290020Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-28T18:14:43.4292096Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-28T18:14:43.4293346Z hint: call:
+2026-04-28T18:14:43.4293816Z hint:
+2026-04-28T18:14:43.4294481Z hint: 	git config --global init.defaultBranch <name>
+2026-04-28T18:14:43.4295449Z hint:
+2026-04-28T18:14:43.4296541Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-28T18:14:43.4297644Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-28T18:14:43.4298481Z hint:
+2026-04-28T18:14:43.4298937Z hint: 	git branch -m <name>
+2026-04-28T18:14:43.4299862Z hint:
+2026-04-28T18:14:43.4300738Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-28T18:14:43.4301893Z Initialized empty Git repository in /home/runner/work/healpipe-test-repo/healpipe-test-repo/.git/
+2026-04-28T18:14:43.4304459Z [command]/usr/bin/git remote add origin https://github.com/angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.4344676Z ##[endgroup]
+2026-04-28T18:14:43.4347550Z ##[group]Disabling automatic garbage collection
+2026-04-28T18:14:43.4348411Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-28T18:14:43.4371511Z ##[endgroup]
+2026-04-28T18:14:43.4372482Z ##[group]Setting up auth
+2026-04-28T18:14:43.4377395Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-28T18:14:43.4404893Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-28T18:14:43.4739331Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-28T18:14:43.4761987Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-28T18:14:43.4944515Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-28T18:14:43.4976776Z ##[endgroup]
+2026-04-28T18:14:43.4978501Z ##[group]Fetching the repository
+2026-04-28T18:14:43.4985965Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +2957f3f644ae3038a7f39bbaa34e8713b7e29a47:refs/remotes/origin/main
+2026-04-28T18:14:43.8356964Z remote: Enumerating objects: 9, done.        
+2026-04-28T18:14:43.8358149Z remote: Counting objects:  11% (1/9)        
+2026-04-28T18:14:43.8359240Z remote: Counting objects:  22% (2/9)        
+2026-04-28T18:14:43.8360498Z remote: Counting objects:  33% (3/9)        
+2026-04-28T18:14:43.8361748Z remote: Counting objects:  44% (4/9)        
+2026-04-28T18:14:43.8362458Z remote: Counting objects:  55% (5/9)        
+2026-04-28T18:14:43.8363130Z remote: Counting objects:  66% (6/9)        
+2026-04-28T18:14:43.8363761Z remote: Counting objects:  77% (7/9)        
+2026-04-28T18:14:43.8364504Z remote: Counting objects:  88% (8/9)        
+2026-04-28T18:14:43.8365244Z remote: Counting objects: 100% (9/9)        
+2026-04-28T18:14:43.8365956Z remote: Counting objects: 100% (9/9), done.        
+2026-04-28T18:14:43.8366720Z remote: Compressing objects:  16% (1/6)        
+2026-04-28T18:14:43.8367389Z remote: Compressing objects:  33% (2/6)        
+2026-04-28T18:14:43.8368109Z remote: Compressing objects:  50% (3/6)        
+2026-04-28T18:14:43.8368827Z remote: Compressing objects:  66% (4/6)        
+2026-04-28T18:14:43.8369536Z remote: Compressing objects:  83% (5/6)        
+2026-04-28T18:14:43.8370420Z remote: Compressing objects: 100% (6/6)        
+2026-04-28T18:14:43.8371454Z remote: Compressing objects: 100% (6/6), done.        
+2026-04-28T18:14:43.8372556Z remote: Total 9 (delta 0), reused 7 (delta 0), pack-reused 0 (from 0)        
+2026-04-28T18:14:43.8478850Z From https://github.com/angermaster11/healpipe-test-repo
+2026-04-28T18:14:43.8480156Z  * [new ref]         2957f3f644ae3038a7f39bbaa34e8713b7e29a47 -> origin/main
+2026-04-28T18:14:43.8630606Z ##[endgroup]
+2026-04-28T18:14:43.8632845Z ##[group]Determining the checkout info
+2026-04-28T18:14:43.8634907Z ##[endgroup]
+2026-04-28T18:14:43.8636177Z ##[group]Checking out the ref
+2026-04-28T18:14:43.8637715Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-28T18:14:43.8639178Z Switched to a new branch 'main'
+2026-04-28T18:14:43.8639979Z branch 'main' set up to track 'origin/main'.
+2026-04-28T18:14:43.8642802Z ##[endgroup]
+2026-04-28T18:14:43.8644605Z [command]/usr/bin/git log -1 --format='%H'
+2026-04-28T18:14:43.8645714Z '2957f3f644ae3038a7f39bbaa34e8713b7e29a47'
+
+
+===== test/3_Set up Python.txt =====
+
+﻿2026-04-28T18:14:43.8858725Z ##[group]Run actions/setup-python@v4
+2026-04-28T18:14:43.8859357Z with:
+2026-04-28T18:14:43.8859743Z   python-version: 3.10
+2026-04-28T18:14:43.8860402Z   check-latest: false
+2026-04-28T18:14:43.8861098Z   token: ***
+2026-04-28T18:14:43.8861516Z   update-environment: true
+2026-04-28T18:14:43.8861986Z   allow-prereleases: false
+2026-04-28T18:14:43.8862439Z ##[endgroup]
+2026-04-28T18:14:44.0542022Z ##[group]Installed versions
+2026-04-28T18:14:44.0648385Z Successfully set up CPython (3.10.20)
+2026-04-28T18:14:44.0651200Z ##[endgroup]
+
+
+===== test/4_Install dependencies.txt =====
+
+﻿2026-04-28T18:14:44.0777786Z ##[group]Run pip install -r requirements.txt
+2026-04-28T18:14:44.0778457Z [36;1mpip install -r requirements.txt[0m
+2026-04-28T18:14:44.0778929Z [36;1mpip install pytest[0m
+2026-04-28T18:14:44.0876596Z shell: /usr/bin/bash -e {0}
+2026-04-28T18:14:44.0877163Z env:
+2026-04-28T18:14:44.0877614Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0878324Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+2026-04-28T18:14:44.0878987Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0879611Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0880530Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+2026-04-28T18:14:44.0881176Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+2026-04-28T18:14:44.0881708Z ##[endgroup]
+2026-04-28T18:14:45.3116900Z Collecting numpy==1.19.0 (from -r requirements.txt (line 1))
+2026-04-28T18:14:45.3979163Z   Downloading numpy-1.19.0.zip (7.3 MB)
+2026-04-28T18:14:45.8558840Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 17.3 MB/s  0:00:00
+2026-04-28T18:14:46.0650649Z   Installing build dependencies: started
+2026-04-28T18:14:47.7995871Z   Installing build dependencies: finished with status 'done'
+2026-04-28T18:14:47.8007673Z   Getting requirements to build wheel: started
+2026-04-28T18:14:48.2119975Z   Getting requirements to build wheel: finished with status 'done'
+2026-04-28T18:14:48.2131654Z   Preparing metadata (pyproject.toml): started
+2026-04-28T18:14:48.4052102Z   Preparing metadata (pyproject.toml): finished with status 'error'
+2026-04-28T18:14:48.4116758Z   error: subprocess-exited-with-error
+2026-04-28T18:14:48.4117371Z   
+2026-04-28T18:14:48.4118271Z   × Preparing metadata (pyproject.toml) did not run successfully.
+2026-04-28T18:14:48.4118955Z   │ exit code: 1
+2026-04-28T18:14:48.4119355Z   ╰─> [24 lines of output]
+2026-04-28T18:14:48.4119933Z       Running from numpy source directory.
+2026-04-28T18:14:48.4121131Z       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
+2026-04-28T18:14:48.4122102Z       Traceback (most recent call last):
+2026-04-28T18:14:48.4132692Z         File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+2026-04-28T18:14:48.4134030Z           main()
+2026-04-28T18:14:48.4135249Z         File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+2026-04-28T18:14:48.4136524Z           json_out["return_val"] = hook(**hook_input["kwargs"])
+2026-04-28T18:14:48.4138058Z         File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+2026-04-28T18:14:48.4139899Z           return hook(metadata_directory, config_settings)
+2026-04-28T18:14:48.4141278Z         File "/tmp/pip-build-env-4smswdb7/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 380, in prepare_metadata_for_build_wheel
+2026-04-28T18:14:48.4142288Z           self.run_setup()
+2026-04-28T18:14:48.4143221Z         File "/tmp/pip-build-env-4smswdb7/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 520, in run_setup
+2026-04-28T18:14:48.4144082Z           super().run_setup(setup_script=setup_script)
+2026-04-28T18:14:48.4144974Z         File "/tmp/pip-build-env-4smswdb7/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 317, in run_setup
+2026-04-28T18:14:48.4145878Z           exec(code, locals())
+2026-04-28T18:14:48.4146358Z         File "<string>", line 489, in <module>
+2026-04-28T18:14:48.4146939Z         File "<string>", line 465, in setup_package
+2026-04-28T18:14:48.4147977Z         File "/tmp/pip-install-9g78lysz/numpy_edbb237d69ae40c0a899ed71853473da/numpy/distutils/core.py", line 24, in <module>
+2026-04-28T18:14:48.4149145Z           from numpy.distutils.command import config, config_compiler, \
+2026-04-28T18:14:48.4150958Z         File "/tmp/pip-install-9g78lysz/numpy_edbb237d69ae40c0a899ed71853473da/numpy/distutils/command/config.py", line 19, in <module>
+2026-04-28T18:14:48.4152180Z           from numpy.distutils.mingw32ccompiler import generate_manifest
+2026-04-28T18:14:48.4153459Z         File "/tmp/pip-install-9g78lysz/numpy_edbb237d69ae40c0a899ed71853473da/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+2026-04-28T18:14:48.4154786Z           from distutils.msvccompiler import get_build_version as get_build_msvc_version
+2026-04-28T18:14:48.4155719Z       ModuleNotFoundError: No module named 'distutils.msvccompiler'
+2026-04-28T18:14:48.4156343Z       [end of output]
+2026-04-28T18:14:48.4156687Z   
+2026-04-28T18:14:48.4157289Z   note: This error originates from a subprocess, and is likely not a problem with pip.
+2026-04-28T18:14:48.4158179Z error: metadata-generation-failed
+2026-04-28T18:14:48.4158496Z 
+2026-04-28T18:14:48.4159061Z × Encountered error while generating package metadata.
+2026-04-28T18:14:48.4159674Z ╰─> numpy
+2026-04-28T18:14:48.4159871Z 
+2026-04-28T18:14:48.4160413Z note: This is an issue with the package mentioned above, not pip.
+2026-04-28T18:14:48.4161039Z hint: See above for details.
+2026-04-28T18:14:48.4997763Z ##[error]Process completed with exit code 1.
+
+
+===== test/10_Post Checkout code.txt =====
+
+﻿2026-04-28T18:14:48.5105069Z Post job cleanup.
+2026-04-28T18:14:48.5836764Z [command]/usr/bin/git version
+2026-04-28T18:14:48.5870628Z git version 2.54.0
+2026-04-28T18:14:48.5909575Z Temporarily overriding HOME='/home/runner/work/_temp/1eb50750-56b9-436c-a7dc-d8615fbac39c' before making global git config changes
+2026-04-28T18:14:48.5910588Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-28T18:14:48.5913798Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/healpipe-test-repo/healpipe-test-repo
+2026-04-28T18:14:48.5942450Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-28T18:14:48.5968191Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-28T18:14:48.6149882Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-28T18:14:48.6173332Z http.https://github.com/.extraheader
+2026-04-28T18:14:48.6184249Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-28T18:14:48.6209202Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+
+
+===== test/11_Complete job.txt =====
+
+﻿2026-04-28T18:14:48.6483543Z Cleaning up orphan processes
+2026-04-28T18:14:48.6709022Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v3, actions/setup-python@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

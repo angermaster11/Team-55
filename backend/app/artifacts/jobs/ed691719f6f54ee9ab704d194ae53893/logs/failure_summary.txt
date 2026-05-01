@@ -1,0 +1,253 @@
+GitHub Actions extracted errors:
+[
+  {
+    "error_type": "Traceback",
+    "file": "/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/mingw32ccompiler.py",
+    "line": "28",
+    "test": null,
+    "context": [
+      "2026-04-28T18:52:41.7536649Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:52:41.7537520Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:52:41.7538385Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib",
+      "2026-04-28T18:52:41.7539115Z ##[endgroup]",
+      "2026-04-28T18:52:43.0157672Z Collecting numpy==1.19.0 (from -r requirements.txt (line 1))",
+      "2026-04-28T18:52:43.0718651Z   Downloading numpy-1.19.0.zip (7.3 MB)",
+      "2026-04-28T18:52:43.1657438Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 114.2 MB/s  0:00:00",
+      "2026-04-28T18:52:43.4468319Z   Installing build dependencies: started",
+      "2026-04-28T18:52:44.7802605Z   Installing build dependencies: finished with status 'done'",
+      "2026-04-28T18:52:44.7814180Z   Getting requirements to build wheel: started",
+      "2026-04-28T18:52:45.4631524Z   Getting requirements to build wheel: finished with status 'done'",
+      "2026-04-28T18:52:45.4641547Z   Preparing metadata (pyproject.toml): started",
+      "2026-04-28T18:52:45.7093366Z   Preparing metadata (pyproject.toml): finished with status 'error'",
+      "2026-04-28T18:52:45.7146606Z   error: subprocess-exited-with-error",
+      "2026-04-28T18:52:45.7147341Z   ",
+      "2026-04-28T18:52:45.7148223Z   × Preparing metadata (pyproject.toml) did not run successfully.",
+      "2026-04-28T18:52:45.7148973Z   │ exit code: 1",
+      "2026-04-28T18:52:45.7149615Z   ╰─> [24 lines of output]",
+      "2026-04-28T18:52:45.7150262Z       Running from numpy source directory.",
+      "2026-04-28T18:52:45.7152600Z       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates",
+      "2026-04-28T18:52:45.7153817Z       Traceback (most recent call last):",
+      "2026-04-28T18:52:45.7163598Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>",
+      "2026-04-28T18:52:45.7165288Z           main()",
+      "2026-04-28T18:52:45.7166549Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 373, in main",
+      "2026-04-28T18:52:45.7167950Z           json_out[\"return_val\"] = hook(**hook_input[\"kwargs\"])",
+      "2026-04-28T18:52:45.7169616Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 175, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:52:45.7171745Z           return hook(metadata_directory, config_settings)",
+      "2026-04-28T18:52:45.7173186Z         File \"/tmp/pip-build-env-4wmkieai/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 380, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:52:45.7174456Z           self.run_setup()",
+      "2026-04-28T18:52:45.7175823Z         File \"/tmp/pip-build-env-4wmkieai/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 520, in run_setup",
+      "2026-04-28T18:52:45.7176896Z           super().run_setup(setup_script=setup_script)",
+      "2026-04-28T18:52:45.7178019Z         File \"/tmp/pip-build-env-4wmkieai/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 317, in run_setup",
+      "2026-04-28T18:52:45.7179084Z           exec(code, locals())",
+      "2026-04-28T18:52:45.7179709Z         File \"<string>\", line 489, in <module>",
+      "2026-04-28T18:52:45.7180411Z         File \"<string>\", line 465, in setup_package",
+      "2026-04-28T18:52:45.7181605Z         File \"/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/core.py\", line 24, in <module>",
+      "2026-04-28T18:52:45.7183258Z           from numpy.distutils.command import config, config_compiler, \\",
+      "2026-04-28T18:52:45.7185042Z         File \"/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/command/config.py\", line 19, in <module>",
+      "2026-04-28T18:52:45.7186477Z           from numpy.distutils.mingw32ccompiler import generate_manifest",
+      "2026-04-28T18:52:45.7187899Z         File \"/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/mingw32ccompiler.py\", line 28, in <module>"
+    ]
+  },
+  {
+    "error_type": "Traceback",
+    "file": "/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/mingw32ccompiler.py",
+    "line": "28",
+    "test": null,
+    "context": [
+      "2026-04-28T18:52:41.7536645Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:52:41.7537517Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64",
+      "2026-04-28T18:52:41.7538382Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib",
+      "2026-04-28T18:52:41.7539111Z ##[endgroup]",
+      "2026-04-28T18:52:43.0157567Z Collecting numpy==1.19.0 (from -r requirements.txt (line 1))",
+      "2026-04-28T18:52:43.0718404Z   Downloading numpy-1.19.0.zip (7.3 MB)",
+      "2026-04-28T18:52:43.1657328Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 114.2 MB/s  0:00:00",
+      "2026-04-28T18:52:43.4468249Z   Installing build dependencies: started",
+      "2026-04-28T18:52:44.7802508Z   Installing build dependencies: finished with status 'done'",
+      "2026-04-28T18:52:44.7814153Z   Getting requirements to build wheel: started",
+      "2026-04-28T18:52:45.4631443Z   Getting requirements to build wheel: finished with status 'done'",
+      "2026-04-28T18:52:45.4641523Z   Preparing metadata (pyproject.toml): started",
+      "2026-04-28T18:52:45.7093292Z   Preparing metadata (pyproject.toml): finished with status 'error'",
+      "2026-04-28T18:52:45.7146575Z   error: subprocess-exited-with-error",
+      "2026-04-28T18:52:45.7147327Z   ",
+      "2026-04-28T18:52:45.7148207Z   × Preparing metadata (pyproject.toml) did not run successfully.",
+      "2026-04-28T18:52:45.7148949Z   │ exit code: 1",
+      "2026-04-28T18:52:45.7149604Z   ╰─> [24 lines of output]",
+      "2026-04-28T18:52:45.7150249Z       Running from numpy source directory.",
+      "2026-04-28T18:52:45.7152539Z       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates",
+      "2026-04-28T18:52:45.7153801Z       Traceback (most recent call last):",
+      "2026-04-28T18:52:45.7163551Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>",
+      "2026-04-28T18:52:45.7165273Z           main()",
+      "2026-04-28T18:52:45.7166539Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 373, in main",
+      "2026-04-28T18:52:45.7167938Z           json_out[\"return_val\"] = hook(**hook_input[\"kwargs\"])",
+      "2026-04-28T18:52:45.7169602Z         File \"/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py\", line 175, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:52:45.7171714Z           return hook(metadata_directory, config_settings)",
+      "2026-04-28T18:52:45.7173172Z         File \"/tmp/pip-build-env-4wmkieai/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 380, in prepare_metadata_for_build_wheel",
+      "2026-04-28T18:52:45.7174439Z           self.run_setup()",
+      "2026-04-28T18:52:45.7175807Z         File \"/tmp/pip-build-env-4wmkieai/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 520, in run_setup",
+      "2026-04-28T18:52:45.7176885Z           super().run_setup(setup_script=setup_script)",
+      "2026-04-28T18:52:45.7178009Z         File \"/tmp/pip-build-env-4wmkieai/overlay/lib/python3.10/site-packages/setuptools/build_meta.py\", line 317, in run_setup",
+      "2026-04-28T18:52:45.7179070Z           exec(code, locals())",
+      "2026-04-28T18:52:45.7179700Z         File \"<string>\", line 489, in <module>",
+      "2026-04-28T18:52:45.7180398Z         File \"<string>\", line 465, in setup_package",
+      "2026-04-28T18:52:45.7181591Z         File \"/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/core.py\", line 24, in <module>",
+      "2026-04-28T18:52:45.7182914Z           from numpy.distutils.command import config, config_compiler, \\",
+      "2026-04-28T18:52:45.7185026Z         File \"/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/command/config.py\", line 19, in <module>",
+      "2026-04-28T18:52:45.7186465Z           from numpy.distutils.mingw32ccompiler import generate_manifest",
+      "2026-04-28T18:52:45.7187886Z         File \"/tmp/pip-install-xd5xlkxp/numpy_45f6b5b5f5814b9193df0e1d7153805a/numpy/distutils/mingw32ccompiler.py\", line 28, in <module>"
+    ]
+  }
+]
+
+Sandbox test output (stdout tail):
+Requirement already satisfied: pip in /tmp/venv/lib/python3.11/site-packages (24.0)
+Collecting pip
+  Downloading pip-26.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: setuptools in /tmp/venv/lib/python3.11/site-packages (79.0.1)
+Collecting setuptools
+  Downloading setuptools-82.0.1-py3-none-any.whl.metadata (6.5 kB)
+Collecting wheel
+  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging>=24.0 (from wheel)
+  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Downloading pip-26.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 678.8 kB/s eta 0:00:00
+Downloading setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 1.2 MB/s eta 0:00:00
+Downloading wheel-0.47.0-py3-none-any.whl (32 kB)
+Downloading packaging-26.2-py3-none-any.whl (100 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 876.9 kB/s eta 0:00:00
+Installing collected packages: setuptools, pip, packaging, wheel
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 79.0.1
+    Uninstalling setuptools-79.0.1:
+      Successfully uninstalled setuptools-79.0.1
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed packaging-26.2 pip-26.1 setuptools-82.0.1 wheel-0.47.0
+Collecting numpy==1.26.4 (from -r requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting pandas==2.0.0 (from -r requirements.txt (line 2))
+  Downloading pandas-2.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading pytz-2026.1.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.1 (from pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading tzdata-2026.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.0->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 2.1 MB/s  0:00:09
+Downloading pandas-2.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 2.4 MB/s  0:00:05
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2026.1.post1-py2.py3-none-any.whl (510 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+Installing collected packages: pytz, tzdata, six, numpy, python-dateutil, pandas
+
+Successfully installed numpy-1.26.4 pandas-2.0.0 python-dateutil-2.9.0.post0 pytz-2026.1.post1 six-1.17.0 tzdata-2026.2
+Collecting pytest
+  Downloading pytest-9.0.3-py3-none-any.whl.metadata (7.6 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: packaging>=22 in /tmp/venv/lib/python3.11/site-packages (from pytest) (26.2)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Downloading pytest-9.0.3-py3-none-any.whl (375 kB)
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 1.8 MB/s  0:00:00
+Installing collected packages: pygments, pluggy, iniconfig, pytest
+
+Successfully installed iniconfig-2.3.0 pluggy-1.6.0 pygments-2.20.0 pytest-9.0.3
+F..F                                                                     [100%]
+=================================== FAILURES ===================================
+___________________________________ test_add ___________________________________
+
+    def test_add():
+>       assert add(2,3) == 6
+E       assert 5 == 6
+E        +  where 5 = add(2, 3)
+
+test_app.py:4: AssertionError
+_______________________________ test_add_string ________________________________
+
+    def test_add_string():
+>       assert add("a ", "b") == "ab"
+               ^^^^^^^^^^^^^^
+
+test_app.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = 'a ', b = 'b'
+
+    def add(a, b):
+>       return np.add(a, b)
+               ^^^^^^^^^^^^
+E       numpy.core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U2'), dtype('<U1')) -> None
+
+app.py:4: UFuncTypeError
+=============================== warnings summary ===============================
+test_app.py::test_divide_by_zero
+  /work/app.py:7: RuntimeWarning: divide by zero encountered in divide
+    return np.divide(a, b)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test_app.py::test_add - assert 5 == 6
+FAILED test_app.py::test_add_string - numpy.core._exceptions._UFuncNoLoopErro...
+2 failed, 2 passed, 1 warning in 0.39s
+
+
+Sandbox test output (stderr tail):
+
+
+Relevant repo files:
+--- app.py ---
+import numpy as np
+
+def add(a, b):
+    return np.add(a, b)
+
+def divide(a, b):
+    return np.divide(a, b)
+
+
+
+--- app.py ---
+import numpy as np
+
+def add(a, b):
+    return np.add(a, b)
+
+def divide(a, b):
+    return np.divide(a, b)
+
+
+
+--- test_app.py ---
+from app import add, divide
+
+def test_add():
+    assert add(2,3) == 6
+
+def test_divide():
+    assert divide(10,2) == 5
+
+def test_divide_by_zero():
+    divide(5,0)
+
+def test_add_string():
+    assert add("a ", "b") == "ab"
+
+
+
+def test_divide_by_zero():
+    divide(5,0)
+

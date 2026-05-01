@@ -1,0 +1,73 @@
+{
+  "job_id": "229019af4c754f85aa279a63daf07dc5",
+  "state": "success",
+  "created_at": "2026-04-28T19:26:55.179713+00:00",
+  "updated_at": "2026-04-28T19:30:15.550731+00:00",
+  "payload": {
+    "owner": "angermaster11",
+    "repo": "healpipe-test-repo",
+    "run_id": 25073172712,
+    "head_sha": "f9fcc3fafe44652912f0b62df2b8cdd0fe2f47ba",
+    "clone_url": "https://github.com/angermaster11/healpipe-test-repo.git"
+  },
+  "steps": [
+    {
+      "at": "2026-04-28T19:26:55.191214+00:00",
+      "name": "start"
+    },
+    {
+      "at": "2026-04-28T19:26:55.191969+00:00",
+      "name": "download_logs"
+    },
+    {
+      "at": "2026-04-28T19:26:58.978029+00:00",
+      "name": "extract_errors"
+    },
+    {
+      "at": "2026-04-28T19:26:58.984623+00:00",
+      "name": "clone_repo"
+    },
+    {
+      "at": "2026-04-28T19:27:02.019579+00:00",
+      "name": "autofix"
+    },
+    {
+      "at": "2026-04-28T19:27:02.021063+00:00",
+      "name": "test_before_fix"
+    },
+    {
+      "at": "2026-04-28T19:28:30.590624+00:00",
+      "name": "llm_generate_patch"
+    },
+    {
+      "at": "2026-04-28T19:28:39.829924+00:00",
+      "name": "apply_patch"
+    },
+    {
+      "at": "2026-04-28T19:28:39.838881+00:00",
+      "name": "test_after_fix"
+    },
+    {
+      "at": "2026-04-28T19:30:15.550719+00:00",
+      "name": "fixed"
+    }
+  ],
+  "error": null,
+  "artifacts": {
+    "job_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5",
+    "repo_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/repo",
+    "logs_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/logs",
+    "test_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/tests",
+    "combined_logs_path": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/logs/raw_logs.txt",
+    "errors_path": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/logs/errors.json",
+    "autofix_notes": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/patch/autofix.txt",
+    "test_before": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/tests/before.json",
+    "failure_summary": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/logs/failure_summary.txt",
+    "patch_attempt1_normalized": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/patch/attempt1.normalized.diff",
+    "patch_attempt1": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/patch/attempt1.diff",
+    "patch_raw_attempt1": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/patch/attempt1.raw.txt",
+    "patch_notes": "ok",
+    "patch_apply_output": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/patch/apply.txt",
+    "test_after": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/229019af4c754f85aa279a63daf07dc5/tests/after.json"
+  }
+}

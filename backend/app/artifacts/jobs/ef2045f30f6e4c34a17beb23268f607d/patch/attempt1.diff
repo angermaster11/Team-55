@@ -1,0 +1,41 @@
+diff --git a/app.py b/app.py
+index 5e1f6a6..8c1f3a3 100644
+--- a/app.py
++++ b/app.py
+@@ -1,7 +1,11 @@
+ import numpy as np
+ 
+-def add(a, b):
+-    return np.add(a, b)
++def add(a, b):
++    # Use regular Python addition instead of numpy add to handle all types correctly
++    return a + b
+ 
+ def divide(a, b):
+-    return np.divide(a, b)
++    return np.divide(a, b)
+diff --git a/test_app.py b/test_app.py
+index 1174337..3856a1c 100644
+--- a/test_app.py
++++ b/test_app.py
+@@ -1,11 +1,11 @@
+ from app import add, divide
+ 
+-def test_add():
+-    assert add(2,3) == 6
++def test_add():
++    assert add(2,3) == 5
+ 
+ def test_divide():
+-    assert divide(10,2) == 5
++    assert divide(10,2) == 5
+ 
+ def test_divide_by_zero():
+-    divide(5,0)
++    divide(5,0)
+ 
+-def test_add_string():
+-    assert add("a ", "b") == "ab"
++def test_add_string():
++    assert add("a ", "b") == "a b"
++

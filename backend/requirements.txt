@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+numpy 
+pandas
+requests
+openai
+pydantic-settings
+httpx
+langgraph

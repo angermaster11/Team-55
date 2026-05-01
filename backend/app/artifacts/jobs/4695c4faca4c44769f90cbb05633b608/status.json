@@ -1,0 +1,55 @@
+{
+  "job_id": "4695c4faca4c44769f90cbb05633b608",
+  "state": "failed",
+  "created_at": "2026-04-28T18:37:44.052492+00:00",
+  "updated_at": "2026-04-28T18:40:48.920887+00:00",
+  "payload": {
+    "owner": "angermaster11",
+    "repo": "healpipe-test-repo",
+    "run_id": 25071006363,
+    "head_sha": "d13bf5aa68c56ca0a290255f27382f711caf9501",
+    "clone_url": "https://github.com/angermaster11/healpipe-test-repo.git"
+  },
+  "steps": [
+    {
+      "at": "2026-04-28T18:37:44.058897+00:00",
+      "name": "start"
+    },
+    {
+      "at": "2026-04-28T18:37:44.059289+00:00",
+      "name": "download_logs"
+    },
+    {
+      "at": "2026-04-28T18:37:48.107812+00:00",
+      "name": "extract_errors"
+    },
+    {
+      "at": "2026-04-28T18:37:48.114788+00:00",
+      "name": "clone_repo"
+    },
+    {
+      "at": "2026-04-28T18:37:51.102605+00:00",
+      "name": "autofix"
+    },
+    {
+      "at": "2026-04-28T18:37:51.104001+00:00",
+      "name": "test_before_fix"
+    },
+    {
+      "at": "2026-04-28T18:40:30.924629+00:00",
+      "name": "llm_generate_patch"
+    }
+  ],
+  "error": "Request timed out.",
+  "artifacts": {
+    "job_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608",
+    "repo_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/repo",
+    "logs_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/logs",
+    "test_dir": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/tests",
+    "combined_logs_path": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/logs/raw_logs.txt",
+    "errors_path": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/logs/errors.json",
+    "autofix_notes": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/patch/autofix.txt",
+    "test_before": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/tests/before.json",
+    "failure_summary": "/media/anger/Vision/healpipe/backend/app/artifacts/jobs/4695c4faca4c44769f90cbb05633b608/logs/failure_summary.txt"
+  }
+}

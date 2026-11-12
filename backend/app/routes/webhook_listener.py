@@ -1,3 +1,6 @@
+import json
+from urllib.parse import parse_qs
+
 from fastapi import APIRouter, BackgroundTasks, Request, HTTPException
 
 from config.settings import get_settings
@@ -8,6 +11,17 @@ from utils.logger import get_logger
 router = APIRouter( tags=["webhook_listener"])
 
 log = get_logger("healpipe.webhook")
+
+
+async def _parse_payload(request: Request) -> dict:
+    """GitHub sends either application/json or application/x-www-form-urlencoded (payload=<json>)."""
+    body = await request.body()
+    content_type = request.headers.get("content-type", "")
+    if "application/x-www-form-urlencoded" in content_type:
+        form = parse_qs(body.decode("utf-8"))
+        raw = (form.get("payload") or [""])[0]
+        return json.loads(raw) if raw else {}
+    return json.loads(body) if body else {}
 
 @router.post("/webhook")
 async def github_webhook(request: Request, background_tasks: BackgroundTasks):
@@ -24,7 +38,12 @@ async def github_webhook(request: Request, background_tasks: BackgroundTasks):
         if settings.github_webhook_secret:
             log.info("webhook signature verified")
 
-        payload = await request.json()
+        payload = await _parse_payload(request)
+
+        event = request.headers.get("X-GitHub-Event", "")
+        if event == "ping":
+            log.info("webhook ping received (hook configured OK)")
+            return {"status": "ok", "message": "pong"}
 
         run = payload.get("workflow_run")
         if not run:
